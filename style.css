@@ -77,11 +77,9 @@ body::after {
     width: 100%;
 
     background:
-        linear-gradient(
-            180deg,
+        linear-gradient(180deg,
             #111111 0%,
-            #080808 100%
-        );
+            #080808 100%);
 
     border-bottom: 1px solid rgba(212, 167, 72, 0.35);
 
@@ -199,12 +197,10 @@ body::after {
     width: 0;
     height: 2px;
 
-    background: linear-gradient(
-        90deg,
-        #9c6b18,
-        #f5d27a,
-        #b98224
-    );
+    background: linear-gradient(90deg,
+            #9c6b18,
+            #f5d27a,
+            #b98224);
 
     transition: width 0.35s ease;
 }
@@ -292,13 +288,11 @@ body::after {
 
     letter-spacing: 10px;
 
-    background: linear-gradient(
-        120deg,
-        #9c6b18,
-        #ffe29a,
-        #c38b2c,
-        #fff0b5
-    );
+    background: linear-gradient(120deg,
+            #9c6b18,
+            #ffe29a,
+            #c38b2c,
+            #fff0b5);
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -349,11 +343,9 @@ body::after {
 
 .shop-btn:hover {
 
-    background: linear-gradient(
-        90deg,
-        #9c6b18,
-        #d7a844
-    );
+    background: linear-gradient(90deg,
+            #9c6b18,
+            #d7a844);
 
     color: #080808;
 
@@ -417,6 +409,7 @@ body::after {
     }
 
 }
+
 /* =========================================
    ABOUT SECTION
 ========================================= */
@@ -615,11 +608,9 @@ body::after {
         "Times New Roman",
         serif;
 
-    font-size: clamp(
-        48px,
-        5vw,
-        76px
-    );
+    font-size: clamp(48px,
+            5vw,
+            76px);
 
     font-weight: 400;
 
@@ -633,13 +624,11 @@ body::after {
 
     display: block;
 
-    background: linear-gradient(
-        120deg,
-        #9c6b18,
-        #f5d27a,
-        #c18b2d,
-        #ffe9a7
-    );
+    background: linear-gradient(120deg,
+            #9c6b18,
+            #f5d27a,
+            #c18b2d,
+            #ffe9a7);
 
     -webkit-background-clip: text;
 
@@ -661,11 +650,9 @@ body::after {
 
     margin: 28px 0;
 
-    background: linear-gradient(
-        90deg,
-        #8f621b,
-        #f0c45d
-    );
+    background: linear-gradient(90deg,
+            #8f621b,
+            #f0c45d);
 }
 
 
@@ -723,8 +710,7 @@ body::after {
 
     padding-bottom: 18px;
 
-    border-bottom: 1px solid
-        rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 
@@ -810,11 +796,9 @@ body::after {
 
 .about-button:hover {
 
-    background: linear-gradient(
-        90deg,
-        #9c6b18,
-        #d4a94c
-    );
+    background: linear-gradient(90deg,
+            #9c6b18,
+            #d4a94c);
 
     color: #080808;
 
@@ -896,6 +880,7 @@ body::after {
     }
 
 }
+
 /* =========================================
    PRODUCTS SECTION
 ========================================= */
@@ -956,13 +941,11 @@ body::after {
 
     display: block;
 
-    background: linear-gradient(
-        120deg,
-        #9c6b18,
-        #f5d27a,
-        #c18b2d,
-        #ffe9a7
-    );
+    background: linear-gradient(120deg,
+            #9c6b18,
+            #f5d27a,
+            #c18b2d,
+            #ffe9a7);
 
     -webkit-background-clip: text;
 
@@ -1008,8 +991,7 @@ body::after {
 
     padding: 12px 28px;
 
-    border: 1px solid
-        rgba(201, 154, 61, 0.45);
+    border: 1px solid rgba(201, 154, 61, 0.45);
 
     background: transparent;
 
@@ -1042,17 +1024,14 @@ body::after {
 
     color: #080808;
 
-    background: linear-gradient(
-        120deg,
-        #a87620,
-        #f0c967
-    );
+    background: linear-gradient(120deg,
+            #a87620,
+            #f0c967);
 
     border-color: #d1a343;
 
     box-shadow:
-        0 5px 20px
-        rgba(201, 154, 61, 0.15);
+        0 5px 20px rgba(201, 154, 61, 0.15);
 }
 
 
@@ -1084,14 +1063,11 @@ body::after {
     position: relative;
 
     background:
-        linear-gradient(
-            145deg,
+        linear-gradient(145deg,
             #151515,
-            #0d0d0d
-        );
+            #0d0d0d);
 
-    border: 1px solid
-        rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.07);
 
     overflow: hidden;
 
@@ -1110,8 +1086,7 @@ body::after {
         rgba(201, 154, 61, 0.45);
 
     box-shadow:
-        0 20px 50px
-        rgba(0, 0, 0, 0.5);
+        0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -1132,11 +1107,9 @@ body::after {
     justify-content: center;
 
     background:
-        radial-gradient(
-            circle,
+        radial-gradient(circle,
             rgba(201, 154, 61, 0.08),
-            transparent 65%
-        );
+            transparent 65%);
 
     overflow: hidden;
 }
@@ -1155,8 +1128,7 @@ body::after {
 }
 
 
-.product-card:hover
-.product-image img {
+.product-card:hover .product-image img {
 
     transform: scale(1.07);
 }
@@ -1228,8 +1200,7 @@ body::after {
 
     padding-top: 18px;
 
-    border-top: 1px solid
-        rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 
@@ -1251,8 +1222,7 @@ body::after {
 
     padding: 10px 15px;
 
-    border: 1px solid
-        rgba(201, 154, 61, 0.5);
+    border: 1px solid rgba(201, 154, 61, 0.5);
 
     background: transparent;
 
@@ -1359,6 +1329,7 @@ body::after {
     }
 
 }
+
 /* =========================================
    DARVÉ FOOTER
 ========================================= */
@@ -1368,15 +1339,12 @@ body::after {
     position: relative;
 
     background:
-        radial-gradient(
-            circle at 80% 20%,
+        radial-gradient(circle at 80% 20%,
             rgba(190, 135, 35, 0.08),
-            transparent 30%
-        ),
+            transparent 30%),
         #050505;
 
-    border-top: 1px solid
-        rgba(201, 154, 61, 0.25);
+    border-top: 1px solid rgba(201, 154, 61, 0.25);
 
     color: #fff;
 
@@ -1400,11 +1368,7 @@ body::after {
     display: grid;
 
     grid-template-columns:
-        1.6fr
-        1fr
-        1fr
-        1.2fr
-        1.4fr;
+        1.6fr 1fr 1fr 1.2fr 1.4fr;
 
     gap: 45px;
 }
@@ -1585,8 +1549,7 @@ body::after {
 
     height: 30px;
 
-    border: 1px solid
-        rgba(201, 154, 61, 0.45);
+    border: 1px solid rgba(201, 154, 61, 0.45);
 
     color: #d3a64a;
 
@@ -1645,11 +1608,9 @@ body::after {
 
     padding: 35px 7%;
 
-    border-top: 1px solid
-        rgba(255, 255, 255, 0.07);
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
 
-    border-bottom: 1px solid
-        rgba(255, 255, 255, 0.07);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 
     display: flex;
 
@@ -1709,8 +1670,7 @@ body::after {
 
     padding: 0 15px;
 
-    border: 1px solid
-        rgba(201, 154, 61, 0.3);
+    border: 1px solid rgba(201, 154, 61, 0.3);
 
     border-right: none;
 
@@ -1738,11 +1698,9 @@ body::after {
 
     border: 1px solid #b7892f;
 
-    background: linear-gradient(
-        120deg,
-        #966619,
-        #d2a448
-    );
+    background: linear-gradient(120deg,
+            #966619,
+            #d2a448);
 
     color: #080808;
 
@@ -1930,8 +1888,7 @@ body::after {
 
     .newsletter-form input {
 
-        border-right: 1px solid
-            rgba(201, 154, 61, 0.3);
+        border-right: 1px solid rgba(201, 154, 61, 0.3);
     }
 
 
