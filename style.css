@@ -13,9 +13,55 @@ html {
 }
 
 body {
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+
     background: #080808;
+    background:
+        radial-gradient(ellipse at 50% 112%, rgba(190, 126, 31, 0.27), transparent 42%),
+        radial-gradient(circle at 12% 18%, rgba(255, 214, 126, 0.08), transparent 24%),
+        linear-gradient(135deg, #090909 0%, #17130e 48%, #070707 100%);
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    opacity: 0.42;
+
+    background-image:
+        linear-gradient(rgba(255, 226, 154, 0.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 226, 154, 0.055) 1px, transparent 1px);
+    background-size: 68px 68px;
+
+    mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+
+    position: fixed;
+    width: min(72vw, 880px);
+    aspect-ratio: 1;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+
+    border: 1px solid rgba(230, 182, 78, 0.22);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 38px rgba(230, 182, 78, 0.035),
+        0 0 0 110px rgba(230, 182, 78, 0.02);
+
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
 
@@ -216,7 +262,6 @@ body {
 .hero {
 
     position: relative;
-    isolation: isolate;
     overflow: hidden;
 
     min-height: calc(100vh - 85px);
@@ -233,50 +278,7 @@ body {
 
     padding: 40px;
 
-    background:
-        radial-gradient(ellipse at 50% 112%, rgba(190, 126, 31, 0.27), transparent 42%),
-        radial-gradient(circle at 12% 18%, rgba(255, 214, 126, 0.08), transparent 24%),
-        linear-gradient(135deg, #090909 0%, #17130e 48%, #070707 100%);
-}
-
-
-.hero::before {
-
-    content: "";
-
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-
-    opacity: 0.42;
-
-    background-image:
-        linear-gradient(rgba(255, 226, 154, 0.055) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 226, 154, 0.055) 1px, transparent 1px);
-    background-size: 68px 68px;
-
-    mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
-}
-
-
-.hero::after {
-
-    content: "";
-
-    position: absolute;
-    width: min(72vw, 880px);
-    aspect-ratio: 1;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-
-    border: 1px solid rgba(230, 182, 78, 0.22);
-    border-radius: 50%;
-    box-shadow:
-        0 0 0 38px rgba(230, 182, 78, 0.035),
-        0 0 0 110px rgba(230, 182, 78, 0.02);
-
-    transform: translate(-50%, -50%);
+    background: transparent;
 }
 
 
@@ -424,13 +426,7 @@ body {
 
     padding: 120px 7%;
 
-    background:
-        radial-gradient(
-            circle at 85% 50%,
-            rgba(180, 125, 30, 0.10),
-            transparent 35%
-        ),
-        #080808;
+    background: transparent;
 
     overflow: hidden;
 }
