@@ -65,6 +65,44 @@ body::after {
 
 
 /* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #111111 0%,
+            #080808 100%
+        );
+
+    border-bottom: 1px solid rgba(212, 167, 72, 0.35);
+
+    box-shadow:
+        0 5px 30px rgba(0, 0, 0, 0.6);
+}
+
+
+.nav-container {
+    max-width: 1400px;
+    height: 85px;
+
+    margin: auto;
+    padding: 0 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================
    LOGO
 ========================= */
 
