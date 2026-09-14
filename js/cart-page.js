@@ -30,6 +30,7 @@ function renderCart() {
         `;
 
         cartTotalContainer.textContent = "";
+        updateCartCount();
 
         return;
     }
@@ -62,9 +63,28 @@ function renderCart() {
                 </h3>
 
                 <p>
-                    ₹${Number(product.price).toLocaleString("en-IN")}
-                    × ${cartItem.quantity}
+                    ₹${Number(product.price).toLocaleString("en-IN")} each
                 </p>
+            </div>
+
+            <div class="quantity-control" aria-label="Quantity for ${product.name}">
+                <button
+                    type="button"
+                    class="quantity-button"
+                    data-quantity-id="${product.id}"
+                    data-quantity-change="-1"
+                    aria-label="Decrease ${product.name} quantity">
+                    −
+                </button>
+                <span>${cartItem.quantity}</span>
+                <button
+                    type="button"
+                    class="quantity-button"
+                    data-quantity-id="${product.id}"
+                    data-quantity-change="1"
+                    aria-label="Increase ${product.name} quantity">
+                    +
+                </button>
             </div>
 
             <strong>
@@ -97,6 +117,7 @@ function renderCart() {
         </button>
     `;
 
+    updateCartCount();
     attachCartPageEvents();
 }
 
@@ -111,6 +132,17 @@ function attachCartPageEvents() {
         });
     });
 
+    const quantityButtons = document.querySelectorAll("[data-quantity-change]");
+
+    quantityButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            changeQuantity(
+                Number(button.dataset.quantityId),
+                Number(button.dataset.quantityChange)
+            );
+        });
+    });
+
     const clearCartButton = document.querySelector("#clearCart");
 
     clearCartButton.addEventListener("click", function () {
@@ -118,6 +150,28 @@ function attachCartPageEvents() {
 
         renderCart();
     });
+}
+
+function changeQuantity(productId, amount) {
+    let cart = getCart();
+    const cartItem = cart.find(function (item) {
+        return Number(item.productId) === productId;
+    });
+
+    if (!cartItem) {
+        return;
+    }
+
+    cartItem.quantity += amount;
+
+    if (cartItem.quantity <= 0) {
+        cart = cart.filter(function (item) {
+            return Number(item.productId) !== productId;
+        });
+    }
+
+    saveCart(cart);
+    renderCart();
 }
 
 function removeFromCart(productId) {

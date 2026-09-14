@@ -735,6 +735,39 @@
     color: #999;
 }
 
+.quantity-control {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.quantity-control span {
+    min-width: 20px;
+
+    color: #eee;
+    text-align: center;
+}
+
+.quantity-button {
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid rgba(201, 154, 61, 0.55);
+
+    background: transparent;
+    color: #e1b95d;
+
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    transition: 0.25s ease;
+}
+
+.quantity-button:hover {
+    background: #c99735;
+    color: #090909;
+}
+
 .cart-item strong {
     color: #dfb65a;
 }
@@ -822,6 +855,11 @@
     .cart-item {
         grid-template-columns: 1fr auto;
 
+    }
+
+    .quantity-control {
+        grid-column: 1 / -1;
+        grid-row: 2;
     }
 
     .cart-item .delete-button {
