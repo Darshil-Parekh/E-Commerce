@@ -29,6 +29,10 @@
                 <a href="#contact" class="nav-link">
                     Contact
                 </a>
+                <a href="cart.html" class="cart-link">
+                    Cart
+                    <span id="cartCount">0</span>
+                </a>
             </nav>
             <button class="menu-btn">
                 ☰
@@ -138,7 +142,19 @@
                 signature fragrances, crafted for those who value style.
             </p>
        </div>
-        <div class="product-grid">
+        <div class="category-buttons" aria-label="Product categories">
+            <button class="category-btn filter-btn active" type="button" data-category="all">
+                All
+            </button>
+            <button class="category-btn filter-btn" type="button" data-category="perfume">
+                Perfumes
+            </button>
+            <button class="category-btn filter-btn" type="button" data-category="watch">
+                Watches
+            </button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
             <!-- PRODUCT 1 -->
             <div class="product-card" data-category="watch">
                 <div class="product-image">
@@ -517,7 +533,9 @@
             </a>
         </div>
     </div>
-</footer>
+    </footer>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
 </body>
 
 </html>
