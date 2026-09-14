@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "DARVÉ Élan",
+        "category": "watch",
+        "categoryLabel": "WATCHES",
+        "price": 4999,
+        "image": "Images/belt watch.png",
+        "description": "Classic black dial with a premium gold-finished case."
+    },
+    {
+        "id": 2,
+        "name": "DARVÉ Noir",
+        "category": "watch",
+        "categoryLabel": "WATCHES",
+        "price": 5499,
+        "image": "Images/chainwatch.png",
+        "description": "A refined timepiece designed for modern elegance."
+    },
+    {
+        "id": 3,
+        "name": "DARVÉ Éclat",
+        "category": "perfume",
+        "categoryLabel": "FRAGRANCES",
+        "price": 1999,
+        "image": "Images/ECLAT perfume.png",
+        "description": "A sophisticated fragrance with warm and distinctive notes."
+    },
+    {
+        "id": 4,
+        "name": "DARVÉ Noir Essence",
+        "category": "perfume",
+        "categoryLabel": "FRAGRANCES",
+        "price": 2299,
+        "image": "Images/noir essence.png",
+        "description": "Deep, elegant notes created for unforgettable moments."
+    },
+    {
+        "id": 5,
+        "name": "DARVÉ Aureus",
+        "category": "watch",
+        "categoryLabel": "WATCHES",
+        "price": 6499,
+        "image": "Images/gold watch.png",
+        "description": "Gold accents meet timeless craftsmanship."
+    },
+    {
+        "id": 6,
+        "name": "DARVÉ Imperial",
+        "category": "perfume",
+        "categoryLabel": "FRAGRANCES",
+        "price": 2499,
+        "image": "Images/imperial.png",
+        "description": "A rich signature scent inspired by timeless luxury."
+    }
+]

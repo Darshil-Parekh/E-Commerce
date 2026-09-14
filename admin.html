@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>DARVÉ Admin Panel</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body class="admin-body" data-admin-page>
+
+    <header class="admin-navbar">
+        <div class="admin-nav-container">
+
+            <a href="index.html" class="admin-logo">
+                <img
+                    src="Images/logo2.png"
+                    alt="DARVÉ Logo">
+            </a>
+
+            <div>
+                <a
+                    href="index.html"
+                    class="admin-back-link">
+                    ← View Store
+                </a>
+
+                <button
+                    type="button"
+                    id="adminLogout"
+                    class="admin-logout">
+                    Log Out
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="admin-container">
+
+        <section class="admin-heading">
+            <div>
+                <span>
+                    DARVÉ MANAGEMENT
+                </span>
+
+                <h1>
+                    Product Admin
+                </h1>
+
+                <p>
+                    Add, edit and remove products from your collection.
+                </p>
+            </div>
+
+            <div class="admin-stat">
+                <strong id="productCount">
+                    0
+                </strong>
+
+                <span>
+                    Products
+                </span>
+            </div>
+        </section>
+
+        <section class="admin-panel">
+
+            <div class="panel-heading">
+                <div>
+                    <span>
+                        PRODUCT FORM
+                    </span>
+
+                    <h2 id="formTitle">
+                        Add Product
+                    </h2>
+                </div>
+
+                <button
+                    type="button"
+                    id="cancelEdit"
+                    class="secondary-button hidden">
+                    Cancel Edit
+                </button>
+            </div>
+
+            <form id="productForm" class="product-form">
+
+                <input
+                    type="hidden"
+                    id="productId">
+
+                <div class="form-group">
+                    <label for="productName">
+                        Product Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="productName"
+                        placeholder="Example: DARVÉ Royal"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="productCategory">
+                        Category
+                    </label>
+
+                    <select
+                        id="productCategory"
+                        required>
+
+                        <option value="watch">
+                            Watch
+                        </option>
+
+                        <option value="perfume">
+                            Perfume
+                        </option>
+
+                        <option value="belt">
+                            Belt
+                        </option>
+
+                        <option value="bag">
+                            Bag
+                        </option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="productPrice">
+                        Price
+                    </label>
+
+                    <input
+                        type="number"
+                        id="productPrice"
+                        min="0"
+                        placeholder="4999"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="productImage">
+                        Image Path
+                    </label>
+
+                    <input
+                        type="text"
+                        id="productImage"
+                        placeholder="Images/product.png"
+                        required>
+                </div>
+
+                <div class="form-group form-group-full">
+                    <label for="productDescription">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="productDescription"
+                        rows="4"
+                        placeholder="Describe the product..."
+                        required></textarea>
+                </div>
+
+                <div class="form-actions form-group-full">
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                        id="saveProductButton">
+                        Add Product
+                    </button>
+
+                    <button
+                        type="button"
+                        class="secondary-button"
+                        id="clearForm">
+                        Clear
+                    </button>
+
+                </div>
+
+            </form>
+
+            <p id="adminMessage" class="admin-message"></p>
+
+        </section>
+
+        <section class="admin-panel">
+
+            <div class="panel-heading">
+                <div>
+                    <span>
+                        CURRENT COLLECTION
+                    </span>
+
+                    <h2>
+                        Manage Products
+                    </h2>
+                </div>
+
+                <select
+                    id="adminFilter"
+                    class="admin-filter">
+
+                    <option value="all">
+                        All Products
+                    </option>
+
+                    <option value="perfume">
+                        Perfumes
+                    </option>
+
+                    <option value="watch">
+                        Watches
+                    </option>
+
+                    <option value="belt">
+                        Belts
+                    </option>
+
+                    <option value="bag">
+                        Bags
+                    </option>
+
+                </select>
+            </div>
+
+            <div
+                id="adminProductList"
+                class="admin-product-list">
+            </div>
+
+        </section>
+
+        <section class="storage-note">
+            <h3>
+                Important: How this version stores products
+            </h3>
+
+            <p>
+                This beginner version keeps the original products in
+                <strong>products.json</strong> and saves admin changes
+                in your browser's <strong>localStorage</strong>.
+                This makes the project easy to learn and works on
+                GitHub Pages, but changes are not shared between
+                different browsers or devices.
+            </p>
+
+            <p>
+                For a real online store where every visitor sees the
+                same changes, the next step is connecting this exact
+                admin panel to Firebase, Supabase or another database.
+            </p>
+        </section>
+
+    </main>
+
+    <script src="js/admin-auth.js" defer></script>
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>

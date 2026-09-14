@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARVÉ Admin Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body class="admin-body auth-body">
+    <main class="auth-panel">
+        <a href="index.html" class="admin-logo">
+            <img src="Images/logo2.png" alt="DARVÉ Logo">
+        </a>
+
+        <span class="section-subtitle">DARVÉ MANAGEMENT</span>
+        <h1>Admin Login</h1>
+
+        <form id="adminLoginForm" class="auth-form">
+            <label for="adminUsername">Username</label>
+            <input type="text" id="adminUsername" autocomplete="username" required>
+
+            <label for="adminPassword">Password</label>
+            <input type="password" id="adminPassword" autocomplete="current-password" required>
+
+            <button type="submit" class="primary-button">Sign In</button>
+            <p id="loginMessage" class="admin-message error" role="alert"></p>
+        </form>
+    </main>
+
+    <script src="js/admin-auth.js"></script>
+</body>
+
+</html>
