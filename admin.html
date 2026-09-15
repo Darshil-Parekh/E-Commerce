@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>DARVÉ Admin Panel</title>
 
@@ -20,22 +18,15 @@
         <div class="admin-nav-container">
 
             <a href="index.html" class="admin-logo">
-                <img
-                    src="Images/logo2.png"
-                    alt="DARVÉ Logo">
+                <img src="Images/logo2.png" alt="DARVÉ Logo">
             </a>
 
             <div>
-                <a
-                    href="index.html"
-                    class="admin-back-link">
+                <a href="index.html" class="admin-back-link">
                     ← View Store
                 </a>
 
-                <button
-                    type="button"
-                    id="adminLogout"
-                    class="admin-logout">
+                <button type="button" id="adminLogout" class="admin-logout">
                     Log Out
                 </button>
             </div>
@@ -84,30 +75,21 @@
                     </h2>
                 </div>
 
-                <button
-                    type="button"
-                    id="cancelEdit"
-                    class="secondary-button hidden">
+                <button type="button" id="cancelEdit" class="secondary-button hidden">
                     Cancel Edit
                 </button>
             </div>
 
             <form id="productForm" class="product-form">
 
-                <input
-                    type="hidden"
-                    id="productId">
+                <input type="hidden" id="productId">
 
                 <div class="form-group">
                     <label for="productName">
                         Product Name
                     </label>
 
-                    <input
-                        type="text"
-                        id="productName"
-                        placeholder="Example: DARVÉ Royal"
-                        required>
+                    <input type="text" id="productName" placeholder="Example: DARVÉ Royal" required>
                 </div>
 
                 <div class="form-group">
@@ -115,9 +97,7 @@
                         Category
                     </label>
 
-                    <select
-                        id="productCategory"
-                        required>
+                    <select id="productCategory" required>
 
                         <option value="watch">
                             Watch
@@ -143,12 +123,7 @@
                         Price
                     </label>
 
-                    <input
-                        type="number"
-                        id="productPrice"
-                        min="0"
-                        placeholder="4999"
-                        required>
+                    <input type="number" id="productPrice" min="0" placeholder="4999" required>
                 </div>
 
                 <div class="form-group">
@@ -156,11 +131,7 @@
                         Image Path
                     </label>
 
-                    <input
-                        type="text"
-                        id="productImage"
-                        placeholder="Images/product.png"
-                        required>
+                    <input type="text" id="productImage" placeholder="Images/product.png" required>
                 </div>
 
                 <div class="form-group form-group-full">
@@ -168,26 +139,17 @@
                         Description
                     </label>
 
-                    <textarea
-                        id="productDescription"
-                        rows="4"
-                        placeholder="Describe the product..."
+                    <textarea id="productDescription" rows="4" placeholder="Describe the product..."
                         required></textarea>
                 </div>
 
                 <div class="form-actions form-group-full">
 
-                    <button
-                        type="submit"
-                        class="primary-button"
-                        id="saveProductButton">
+                    <button type="submit" class="primary-button" id="saveProductButton">
                         Add Product
                     </button>
 
-                    <button
-                        type="button"
-                        class="secondary-button"
-                        id="clearForm">
+                    <button type="button" class="secondary-button" id="clearForm">
                         Clear
                     </button>
 
@@ -212,9 +174,7 @@
                     </h2>
                 </div>
 
-                <select
-                    id="adminFilter"
-                    class="admin-filter">
+                <select id="adminFilter" class="admin-filter">
 
                     <option value="all">
                         All Products
@@ -239,9 +199,7 @@
                 </select>
             </div>
 
-            <div
-                id="adminProductList"
-                class="admin-product-list">
+            <div id="adminProductList" class="admin-product-list">
             </div>
 
         </section>

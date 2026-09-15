@@ -98,11 +98,9 @@
     min-height: 100vh;
 
     background:
-        radial-gradient(
-            ellipse at 50% 0%,
+        radial-gradient(ellipse at 50% 0%,
             rgba(190, 126, 31, 0.17),
-            transparent 45%
-        ),
+            transparent 45%),
         linear-gradient(135deg, #080808 0%, #11100d 48%, #080808 100%);
 }
 
@@ -200,11 +198,11 @@
     margin-bottom: 35px;
 }
 
-.admin-heading > div:first-child {
+.admin-heading>div:first-child {
     position: relative;
 }
 
-.admin-heading > div:first-child::after {
+.admin-heading>div:first-child::after {
     display: block;
 
     width: 72px;
