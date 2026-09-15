@@ -68,7 +68,9 @@ function renderProducts() {
             <div class="product-image">
                 <img
                     src="${product.image}"
-                    alt="${product.name}">
+                    alt="${product.name}"
+                    loading="lazy"
+                    decoding="async">
             </div>
 
             <div class="product-info">
